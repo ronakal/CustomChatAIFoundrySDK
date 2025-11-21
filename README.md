@@ -124,7 +124,10 @@ From the Azure portal, select Subscriptions, select your subscription and then s
 Search for and select Microsoft.OperationalInsights and click on the three dots for this resource provider and select Register. also resiter Microsoft.Search,Microsoft.Web,Microsoft.ManagedIdentity
 
 From your Project in the Azure AI Foundry, select Tracing under Access and improve from the left pane. Select Create New.
+
 <img width="1044" height="608" alt="image" src="https://github.com/user-attachments/assets/608e0f54-c74a-4129-b600-21df7e45abdc" />
+
+
 <img width="1048" height="585" alt="image" src="https://github.com/user-attachments/assets/999382c4-e2f9-48d0-a87b-c360c90c85bf" />
 
 Back in the VS Code, to enable logging of telemetry to your project, install azure-monitor-opentelemetry.
