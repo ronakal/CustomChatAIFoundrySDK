@@ -41,6 +41,7 @@ After you deploy the gpt-4o-mini, deploy the text-embedding-ada-002 model. Selec
 5: Install the Azure CLI and sign in
 
 1-Search for PowerShell from the Windows search bar and open it in the Administrator mode. Accept if prompted for the launch to continue.
+
 2-
 $progressPreference = 'silentlyContinue'
 Write-Host "Installing WinGet PowerShell module from PSGallery..."
