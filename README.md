@@ -1,4 +1,5 @@
 1: Create an Azure AI Hub resource and project
+
 <img width="914" height="462" alt="image" src="https://github.com/user-attachments/assets/194a1eac-ad37-4c83-87de-ed82188e4674" />
 <img width="935" height="505" alt="image" src="https://github.com/user-attachments/assets/735f7abf-f809-4c1c-a061-2f4e4f7a31cf" />
 <img width="935" height="583" alt="image" src="https://github.com/user-attachments/assets/8ba8349d-ff3e-42aa-8245-d883d94623a5" />
@@ -13,26 +14,35 @@
 <img width="942" height="576" alt="image" src="https://github.com/user-attachments/assets/1745a046-3269-4a37-8d34-a10f79d1113e" />
 <img width="918" height="619" alt="image" src="https://github.com/user-attachments/assets/21f09a01-7404-4d91-a8b9-340f584fb975" />
 <img width="827" height="650" alt="image" src="https://github.com/user-attachments/assets/493f10e3-6c94-42fc-b980-aef9925bffc3" />
+
  2: Deploy models
+ 
 <img width="661" height="568" alt="image" src="https://github.com/user-attachments/assets/b4dab586-ccfe-4ff4-9de1-4d66ea0a79a6" />
 <img width="1033" height="640" alt="image" src="https://github.com/user-attachments/assets/0f9185c6-e3ee-42e3-b3a0-31679e0c691f" />
 
 After you deploy the gpt-4o-mini, deploy the text-embedding-ada-002 model. Select the Deployment Type as Standard.
 <img width="957" height="453" alt="image" src="https://github.com/user-attachments/assets/b4d4fe11-9734-4e6b-80d2-e1e078fd6b5a" />
+
 3: Create an Azure AI Search service
+
 <img width="952" height="420" alt="image" src="https://github.com/user-attachments/assets/ed0aa9aa-e62c-4a98-8c92-fc7498ce0362" />
 <img width="534" height="497" alt="image" src="https://github.com/user-attachments/assets/61e32397-47e7-4c47-b4c4-4ac1caec9c14" />
 <img width="811" height="564" alt="image" src="https://github.com/user-attachments/assets/2b0b52c7-82c5-4c5e-a82a-317d2f2b6ce0" />
 <img width="994" height="577" alt="image" src="https://github.com/user-attachments/assets/30345ca3-b04d-4a47-ad00-749810db155b" />
+
 4: Connect the Azure AI Search to your project
+
 <img width="761" height="543" alt="image" src="https://github.com/user-attachments/assets/2df42d7b-35cf-4b75-98bb-e851e259dc6c" />
 <img width="788" height="469" alt="image" src="https://github.com/user-attachments/assets/17a67f10-a867-4698-85b9-f7d7619a3929" />
 <img width="794" height="475" alt="image" src="https://github.com/user-attachments/assets/e41457e6-4960-4a2f-8393-39c65d4d75bc" />
 <img width="954" height="620" alt="image" src="https://github.com/user-attachments/assets/1b1fae77-a649-41b9-a790-4a4a386c2128" />
 <img width="707" height="562" alt="image" src="https://github.com/user-attachments/assets/266c86f7-5829-4a0c-bc21-d0b9416993ec" />
+
 5: Install the Azure CLI and sign in
+
 1-Search for PowerShell from the Windows search bar and open it in the Administrator mode. Accept if prompted for the launch to continue.
-2-$progressPreference = 'silentlyContinue'
+2-
+$progressPreference = 'silentlyContinue'
 Write-Host "Installing WinGet PowerShell module from PSGallery..."
 Install-PackageProvider -Name NuGet -Force | Out-Null
 Install-Module -Name Microsoft.WinGet.Client -Force -Repository PSGallery | Out-Null
@@ -45,13 +55,17 @@ winget install -e --id Microsoft.AzureCLI
 <img width="541" height="515" alt="image" src="https://github.com/user-attachments/assets/c4f167ba-71fc-42cf-a197-87097b440da0" />
 
 6: Create a new Python environment
+
 <img width="267" height="524" alt="image" src="https://github.com/user-attachments/assets/94b557b8-decc-4be7-8c6d-035d42e4b68f" />
 <img width="259" height="615" alt="image" src="https://github.com/user-attachments/assets/6d96bf58-3ec2-4662-b2fd-e1b1277f8c3c" />
 Open VS Code. Select File -> Open Folder and select RAGproject folder that we created in the previous steps (from C:\Users\Admin).
+
 7: Install packages
+
 <img width="259" height="610" alt="image" src="https://github.com/user-attachments/assets/a85c31f5-0997-435a-828c-aeef3d04358b" />
 <img width="269" height="787" alt="image" src="https://github.com/user-attachments/assets/e3a9486e-9f53-42ae-b48a-3e80753d5173" />
 <img width="264" height="566" alt="image" src="https://github.com/user-attachments/assets/48252d26-db11-42b1-8d06-4d4df8437210" />
+
 8: Create helper script
 1-create config.py under src
 2-add .env under src with the code checked in
